@@ -3,8 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="Testing.AutomationTesting.external_filereading"/>
+      <class name="Testing.AutomationTesting.cssSelectorLocator"/>
+      <class name="AutomationTask.LocatorTask"/>
       <class name="Testing.AutomationTesting.dropdownhandle"/>
-      <class name="Testing.AutomationTesting.AppTest"/>
+      <class name="practice_form.additional_from"/>
+      <class name="Testing.AutomationTesting.Groupingexample"/>
+      <class name="com.test.DemoblazeTest"/>
+      <class name="practice_form.personal_info"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
