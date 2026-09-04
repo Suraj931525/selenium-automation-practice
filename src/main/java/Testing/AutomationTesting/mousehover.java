@@ -14,6 +14,7 @@ public class mousehover {
 		mousehover ob =new mousehover ();
 		ob.mousehover1();
 		ob.dragAndDrop();
+		ob.slider();
 	}
 	
 	void mousehover1() {
@@ -40,6 +41,14 @@ public class mousehover {
 
 	    actions.dragAndDrop(drag, drop).perform();
 	}
+	
+	void slider() {
+		 WebElement left_slider=driver.findElement(By.xpath("//*[@id=\"slider-range\"]/span[1]"));
+		 Actions ac= new Actions(driver);  
+		 ac.dragAndDropBy(left_slider, 50, 0).build().perform();
+	}
+	
+	
 	
 			
 			
