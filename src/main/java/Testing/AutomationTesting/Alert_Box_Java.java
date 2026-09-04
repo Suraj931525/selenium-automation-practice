@@ -24,19 +24,19 @@ public class Alert_Box_Java {
 	}
 	void simplealert() throws InterruptedException{
 		driver.findElement(By.id("alertBtn")).click();
-		al=driver.switchTo().alert();
+		Alert al=driver.switchTo().alert();
 		System.out.println(al.getText());
 		al.accept();
 	}
 	void confirmalert() {
 		// cancel button
 		driver.findElement(By.id("confirmbtn")).click();
-		al=driver.switchTo().alert();
+		Alert al=driver.switchTo().alert();
 		System.out.println("Cancel:"+algetText());
 		al.dismiss();
 		//ok button
 		driver.findElement(By.id("confirmbtn")).click();
-		al.driver.switchTo.alert();
+		Alert al=driver.switchTo().alert();
 		System.out.println("ok"+al.getText());
 		al.accept();
 		
