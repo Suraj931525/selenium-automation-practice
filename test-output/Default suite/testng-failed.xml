@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.DemoblazeTest">
+      <class name="Test_Automation_Testing.Parameterized_Testing">
         <methods>
-          <include name="signUpLoginAndAddToCart"/>
-          <include name="browserSetup"/>
+          <include name="add"/>
         </methods>
-      </class> <!-- com.test.DemoblazeTest -->
+      </class> <!-- Test_Automation_Testing.Parameterized_Testing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
