@@ -7,11 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Alert_Box_Java {
 	ChromeDriver driver;
 
-	public static void main(String[] args) {
-		//alert_box a=new alert_box();
-		//a.launch_setup();
-		//a.simplealert();
-		//a.confirmalert
+	public static void main(String[] args) throws InterruptedException {
+		Alert_Box_Java a=new Alert_Box_Java();
+		a.launch_setup();
+		a.simplealert();
+		a.confirmalert();
+		a.promptalert();
 		
 
 	}
@@ -32,13 +33,22 @@ public class Alert_Box_Java {
 		// cancel button
 		driver.findElement(By.id("confirmbtn")).click();
 		Alert al=driver.switchTo().alert();
-		//System.out.println("Cancel:"+algetText());
+		System.out.println("Cancel:"+al.getText());
 		al.dismiss();
 		//ok button
 		driver.findElement(By.id("confirmbtn")).click();
-		//Alert al=driver.switchTo().alert();
-		System.out.println("ok"+al.getText());
+		Alert all=driver.switchTo().alert();
+		System.out.println("ok"+all.getText());
+		all.accept();
+		
+	}
+		void promptalert() {
+		driver.findElement(By.id("promptBtn")).click();
+		Alert al=driver.switchTo().alert();
+		System.out.println("prompt ok"+al.getText());
 		al.accept();
+			
+		}
 		
 		
 		
@@ -49,4 +59,4 @@ public class Alert_Box_Java {
 		
 		
 	}
-}
+

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExternalFileReading.External_File_Reading">
+      <class name="Assertion.assersion">
         <methods>
-          <include name="test"/>
+          <include name="hardassersion"/>
         </methods>
-      </class> <!-- ExternalFileReading.External_File_Reading -->
+      </class> <!-- Assertion.assersion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
