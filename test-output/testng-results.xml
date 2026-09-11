@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-11T20:05:01 IST" name="Suite" finished-at="2026-09-11T20:05:01 IST" duration-ms="57">
+  <suite started-at="2026-09-11T20:17:24 IST" name="Default suite" finished-at="2026-09-11T20:17:24 IST" duration-ms="58">
     <groups>
-      <group name="RegressionTest">
-        <method signature="group1.go()[pri:0, instance:GroupingTestCases.group1@6302bbb1]" name="go" class="GroupingTestCases.group1"/>
-        <method signature="group2.going()[pri:0, instance:GroupingTestCases.group2@7cc0cdad]" name="going" class="GroupingTestCases.group2"/>
-        <method signature="group2.runing()[pri:0, instance:GroupingTestCases.group2@7cc0cdad]" name="runing" class="GroupingTestCases.group2"/>
-      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2026-09-11T20:05:01 IST" name="Test" finished-at="2026-09-11T20:05:01 IST" duration-ms="57">
-      <class name="GroupingTestCases.group2">
-        <test-method signature="going()[pri:0, instance:GroupingTestCases.group2@7cc0cdad]" started-at="2026-09-11T20:05:01 IST" name="going" finished-at="2026-09-11T20:05:01 IST" duration-ms="1" status="PASS">
+    <test started-at="2026-09-11T20:17:24 IST" name="Default test" finished-at="2026-09-11T20:17:24 IST" duration-ms="58">
+      <class name="GroupingTestCases.Testdependency">
+        <test-method signature="launch()[pri:0, instance:GroupingTestCases.Testdependency@55141def]" started-at="2026-09-11T20:17:24 IST" name="launch" finished-at="2026-09-11T20:17:24 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- going -->
-        <test-method signature="runing()[pri:0, instance:GroupingTestCases.group2@7cc0cdad]" started-at="2026-09-11T20:05:01 IST" name="runing" finished-at="2026-09-11T20:05:01 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- launch -->
+        <test-method signature="dashboard()[pri:0, instance:GroupingTestCases.Testdependency@55141def]" started-at="2026-09-11T20:17:24 IST" name="dashboard" finished-at="2026-09-11T20:17:24 IST" depends-on-methods="GroupingTestCases.Testdependency.launch" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runing -->
-      </class> <!-- GroupingTestCases.group2 -->
-      <class name="GroupingTestCases.group1">
-        <test-method signature="go()[pri:0, instance:GroupingTestCases.group1@6302bbb1]" started-at="2026-09-11T20:05:01 IST" name="go" finished-at="2026-09-11T20:05:01 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- go -->
-      </class> <!-- GroupingTestCases.group1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- dashboard -->
+      </class> <!-- GroupingTestCases.Testdependency -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
