@@ -7,7 +7,7 @@ public class test {
 	public static void main(String[] args) {
 		 
 		test sb=new test();
-		sb
+		
 	}
 	
 	void sign_up(){

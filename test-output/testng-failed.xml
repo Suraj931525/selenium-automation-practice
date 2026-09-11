@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Automation_Testing.Parameterized_Testing">
+      <class name="ExternalFileReading.External_File_Reading">
         <methods>
-          <include name="add"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- Test_Automation_Testing.Parameterized_Testing -->
+      </class> <!-- ExternalFileReading.External_File_Reading -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

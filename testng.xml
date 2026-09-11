@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  <groups>
+  	<run>
+  		<exclude name="Smoketest"></exclude>
+  	</run>
+  </groups>
+  
    
-    <parameter name="num1" value="10"/>
-    <parameter name="num2" value="20"/>
+    
   
     <classes>
       
-      <class name="Test_Automation_Testing.Parameterized_Testing"/>
+      <class name="GroupingTestCases.group1"/>
+      <class name="GroupingTestCases.group2"/>
+      
     </classes>
   </test>
 </suite>

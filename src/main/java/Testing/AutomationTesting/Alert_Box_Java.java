@@ -8,10 +8,10 @@ public class Alert_Box_Java {
 	ChromeDriver driver;
 
 	public static void main(String[] args) {
-		alert_box a=new alert_box();
-		a.launch_setup();
-		a.simplealert();
-		a.confirmalert
+		//alert_box a=new alert_box();
+		//a.launch_setup();
+		//a.simplealert();
+		//a.confirmalert
 		
 
 	}
@@ -32,11 +32,11 @@ public class Alert_Box_Java {
 		// cancel button
 		driver.findElement(By.id("confirmbtn")).click();
 		Alert al=driver.switchTo().alert();
-		System.out.println("Cancel:"+algetText());
+		//System.out.println("Cancel:"+algetText());
 		al.dismiss();
 		//ok button
 		driver.findElement(By.id("confirmbtn")).click();
-		Alert al=driver.switchTo().alert();
+		//Alert al=driver.switchTo().alert();
 		System.out.println("ok"+al.getText());
 		al.accept();
 		
